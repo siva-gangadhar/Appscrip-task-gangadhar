@@ -1,0 +1,36 @@
+.product-discover {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px; /* Set a max width for larger screens */
+    margin: 0 auto; /* Center the component */
+  }
+  
+  .product-discover h1 {
+    font-size: 2.5rem; /* Responsive font size */
+    margin-bottom: 20px;
+  }
+  
+  .product-discover p {
+    font-size: 1.2rem; /* Responsive font size */
+    line-height: 1.5; /* Better readability */
+  }
+  
+  @media (max-width: 768px) {
+    .product-discover h1 {
+      font-size: 2rem; /* Smaller font size for mobile */
+    }
+  
+    .product-discover p {
+      font-size: 1rem; /* Smaller font size for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-discover {
+      padding: 10px; /* Less padding on smaller screens */
+    }
+  
+    .product-discover h1 {
+      font-size: 1.5rem; /* Even smaller font size for smaller devices */
+    }
+  }

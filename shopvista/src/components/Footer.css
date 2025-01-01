@@ -1,0 +1,125 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .footer-section {
+    flex: 1 1 20%;
+    min-width: 200px;
+  }
+  
+  h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .subscribe-form input {
+    padding: 10px;
+    flex: 1;
+    font-size: 14px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  .subscribe-form button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .currency-icon {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+  
+  .payment-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px
+  }
+  
+  .icon {
+    font-size: 30px;
+    color: #fff;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    font-size: 12px;
+    opacity: 0.7;
+  }
+
+  .collapsible ul {
+    list-style-type: none; /* Removes the bullets */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+  }
+  
+  .collapsible ul li {
+    margin-bottom: 10px; /* Optional: Add spacing between list items */
+  }
+  
+  /* Mobile-specific styles */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .collapsible ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .collapsible li {
+        display: none;
+    }
+  
+    .collapsible h3 {
+      cursor: pointer;
+    }
+  
+    .social-icons i {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+  }
+  

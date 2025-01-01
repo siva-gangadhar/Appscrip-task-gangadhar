@@ -1,0 +1,47 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #f4f4f4;
+    left: 0px; /* Hidden position */
+    transition: left 0.3s;
+    z-index: 1000;
+    padding: 20px;
+    display: none;
+  }
+  
+  .sidebar.open {
+    top: 0;
+    left: 0; /* Show sidebar */
+    display: inline;
+    position: fixed;
+  }
+  
+  
+  .toggle-button {
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Position of the button outside of sidebar */
+    z-index: 1100;
+  }
+  
+  .sidebar-content {
+    margin-top: 60px; /* Spacing for the toggle button */
+  }
+  
+  .filter-options h4 {
+    margin: 10px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 60%;
+      left: 0%; /* Hide off-screen */
+      height: 100vh;
+    }
+    .sidebar.open {
+      left: 0; /* Show on mobile */
+      top: 0;
+      display: block;
+      z-index: 10000;
+    }
+  }
